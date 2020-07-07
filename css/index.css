@@ -18,3 +18,139 @@ body {
     background: var(--bg);
     color: var(--main-text);
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+header .brand {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header .brand img {
+    height: 20px;
+    width: auto;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+header ul li + li {
+    margin-left: 35px;
+}
+
+header ul li {
+    display: flex;
+    align-items: center;
+}
+
+header ul li a {
+    text-decoration: none;
+}
+
+header ul li a span {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: hsl(273, 4%, 51%);
+}
+
+header ul li a:hover span {
+    color: hsl(256, 26%, 20%);
+    transition: 0.3s;
+}
+
+header ul li:last-child a {
+    display: flex;
+    justify-content: center;
+    width: 135px;
+    border: 2px solid hsl(256, 26%, 20%);
+    padding: 7px 25px;
+}
+
+header ul li:last-child a span {
+    color: hsl(256, 26%, 20%);
+}
+
+header ul li:last-child a:hover {
+    background: hsl(256, 26%, 20%);
+    transition: 0.3s;
+}
+
+header ul li:last-child a:hover span {
+    color: hsl(0, 0%, 100%);
+    transition: 0.3s;
+}
+
+main section.first {
+    padding: 100px 15px;
+    background: hsl(253, 25%, 20%);
+}
+
+main section.first .row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+}
+
+main section.first .row .col + .col {
+    margin-left: 15px;
+}
+
+main section.first .row .col {
+    width: 50%;
+}
+
+main section.first h1 {
+    font-family: "DM Serif Display", serif;
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 1;
+    margin-bottom: 25px;
+    color: hsl(0, 0%, 100%);
+}
+
+main section.first p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 35px;
+    color: hsl(0, 0%, 100%);
+}
+
+main section.first a {
+    display: flex;
+    justify-content: center;
+    width: 135px;
+    border: 2px solid hsl(0, 0%, 100%);
+    padding: 7px 25px;
+    text-decoration: none;
+}
+
+main section.first a span {
+    color: hsl(0, 0%, 100%);
+    text-transform: uppercase;
+}
+
+main section.first a:hover {
+    background: hsl(0, 0%, 100%);
+    transition: 0.3s;
+}
+
+main section.first a:hover span {
+    color: hsl(256, 26%, 20%);
+    transition: 0.3s;
+}
