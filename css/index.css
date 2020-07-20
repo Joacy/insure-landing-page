@@ -154,3 +154,52 @@ main section.first a:hover span {
     color: hsl(256, 26%, 20%);
     transition: 0.3s;
 }
+
+footer {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+footer div.menu-footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 25px 0;
+}
+
+footer div.menu-footer div.column-footer {
+}
+
+footer div.menu-footer div.column-footer p.topic {
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+footer div.menu-footer div.column-footer ul.options {
+    list-style: none;
+}
+
+footer div.menu-footer div.column-footer ul.options li.option {
+}
+
+footer div.menu-footer div.column-footer ul.options li.option a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+footer div.menu-footer div.column-footer ul.options li.option + li.option {
+    margin-top: 8px;
+}
+
+@media screen and (max-width: 991px) {
+    footer div.menu-footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    footer div.menu-footer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
